@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Favorites</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- <ion-button href="/details">Show details</ion-button> button tilføjet fra ionic bog kap 4 s85 -->
+  <!-- <ion-button routerLink="/details" routerDirection="forward"> Show details v2</ion-button> button tilføjet fra ionic bog kap 4 s85 -->
+  <ion-list> <!--kodelinje og 4 linjer ned er fra ionic bogen kap 4 s.90-->
+    <ion-item *ngFor="let tour of tours" [routerLink]="['/details', tour]" routerDirection="forward">
+      {{ tour.Title }}
+    </ion-item>
+  </ion-list>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-buttons slot="start"> <!--kode linje og 2 ned tilføjet fra ionic bog kap 4 s84-->
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title size="large">Favorites</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>

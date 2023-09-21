@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Request</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button routerLink="/favorites" routerDirection="root"> Back to Favorites </ion-button> <!--kodelinje tilføjet fra ionic bog kap 4 s88-->
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-buttons slot="start"> <!--"button back" og 2 linjer ned tilføjet fra ionic bog kap 4 s87-->
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <ion-title size="large">Request</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>
